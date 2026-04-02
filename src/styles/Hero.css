@@ -1,0 +1,108 @@
+.hero-luxury {
+  height: 100vh;
+  background: url('../assets/hero-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-vignette {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75); /* Thora dark overlay taake white text nazar aaye */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main-container {
+  text-align: center;
+  padding: 0 20px;
+  max-width: 1200px; /* Container limit */
+}
+
+/* --- Title Fix (EARTH DEVELOPERS) --- */
+.hero-main-title {
+  font-size: clamp(2.5rem, 7vw, 5.5rem); /* Font thora chota kiya taake overlap na ho */
+  color: #D4AF37;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 20px; /* Space niche wale text ke liye */
+  line-height: 1.1;
+  display: block;
+}
+
+/* --- Tagline Fix --- */
+.hero-tagline-box {
+  margin-bottom: 40px;
+}
+
+.tagline-main {
+  display: block;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 15px; /* Spacing between lines */
+  text-transform: uppercase;
+}
+
+.tagline-sub {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  color: #bbb;
+  font-weight: 300;
+  letter-spacing: 1px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Buttons Fix --- */
+.hero-cta-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.luxury-btn-gold {
+  padding: 15px 35px;
+  background: #D4AF37;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.3s;
+  border: 2px solid #D4AF37;
+}
+
+.luxury-btn-outline {
+  padding: 15px 35px;
+  background: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid #ffffff;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.luxury-btn-gold:hover, .luxury-btn-outline:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Animation */
+.hero-fade-content {
+  animation: fadeInOut 1.5s ease-out;
+}
+
+@keyframes fadeInOut {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .hero-main-title { letter-spacing: 4px; }
+  .hero-cta-group { flex-direction: column; }
+}

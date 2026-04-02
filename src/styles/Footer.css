@@ -1,0 +1,108 @@
+/* --- Resetting and Container --- */
+.premium-footer-final {
+  background-color: #050505 !important;
+  padding: 80px 10% 40px 10% !important;
+  color: white !important;
+  border-top: 2px solid #D4AF37 !important;
+  text-align: center !important;
+}
+
+.footer-grid-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 40px !important;
+  margin-bottom: 50px !important;
+  align-items: start !important;
+}
+
+/* --- Logo & Text --- */
+.footer-main-logo {
+  width: 180px !important;
+  margin-bottom: 20px !important;
+}
+
+.footer-desc {
+  color: #888 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.6 !important;
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+
+/* --- THE ANIMATIONS (Fixed) --- */
+.social-icon-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 20px !important;
+  margin-top: 25px !important;
+}
+
+.footer-icon-box {
+  width: 45px !important;
+  height: 45px !important;
+  border: 1px solid #D4AF37 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #D4AF37 !important;
+  text-decoration: none !important;
+  font-size: 1.2rem !important;
+  transition: all 0.4s ease !important; /* Transition for animation */
+  animation: footerFloat 3s ease-in-out infinite !important;
+}
+
+/* Hover Effect */
+.footer-icon-box:hover {
+  background-color: #D4AF37 !important;
+  color: #000 !important;
+  transform: translateY(-10px) scale(1.1) !important;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5) !important;
+}
+
+/* Floating Keyframes */
+@keyframes footerFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* --- Fixing Dots & Links --- */
+.footer-label {
+  color: #D4AF37 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 20px !important;
+}
+
+.footer-ul {
+  list-style: none !important; /* No Dots */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.footer-ul li {
+  margin-bottom: 12px !important;
+}
+
+.footer-ul li a {
+  color: #aaa !important;
+  text-decoration: none !important;
+  transition: 0.3s !important;
+}
+
+.footer-ul li a:hover {
+  color: #D4AF37 !important;
+}
+
+.footer-gold-tag {
+  color: #D4AF37 !important;
+  font-weight: bold !important;
+  letter-spacing: 3px !important;
+  margin-top: 20px !important;
+}
+
+.footer-copyright-bar {
+  border-top: 1px solid #222 !important;
+  padding-top: 30px !important;
+  opacity: 0.6 !important;
+}

@@ -1,0 +1,92 @@
+.packages-page {
+  padding: 120px 5%; /* Padding thori barhayi taake separation saaf ho */
+  
+  /* --- Unified Background with Dark Overlay --- */
+  background: linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)), 
+              url('../assets/service-web.jpg') no-repeat center center/cover;
+  background-attachment: fixed; /* Parallax effect for luxury feel */
+  
+  color: white;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px; /* Gap thora barhaya taake grid saaf lage */
+  margin-top: 60px;
+}
+
+.package-card-premium {
+  /* --- Glassmorphism Effect --- */
+  background: rgba(21, 21, 21, 0.6); 
+  backdrop-filter: blur(10px);
+  
+  padding: 40px 25px; /* Padding mazeed behtar ki */
+  border-radius: 15px;
+  border: 1px solid rgba(212, 175, 55, 0.1); /* Halki si gold border pehle se */
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-card-premium:hover {
+  border-color: #D4AF37;
+  background: rgba(26, 26, 26, 0.9);
+  transform: translateY(-12px); /* Hover jump thora zyada premium lagega */
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+}
+
+.package-icon {
+  font-size: 3rem; /* Icon thora bara kiya */
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+}
+
+.package-card-premium h3 {
+  color: #D4AF37;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.package-card-premium p {
+  font-size: 0.95rem;
+  color: #bbb; /* Thora light gray taake readable ho */
+  margin-bottom: 25px;
+  line-height: 1.5;
+  height: auto; /* Auto height with min-height behtar rehti hai */
+  min-height: 50px;
+}
+
+.btn-more-info {
+  font-size: 0.9rem;
+  padding: 10px 22px;
+  color: #D4AF37;
+  border: 2px solid #D4AF37; /* Border thori thick ki */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-more-info:hover {
+  background: #D4AF37;
+  color: black;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+/* --- Mobile Fix --- */
+@media (max-width: 768px) {
+  .packages-page {
+    background-attachment: scroll; /* Mobile par parallax band taake lag na ho */
+    padding: 80px 5%;
+  }
+}

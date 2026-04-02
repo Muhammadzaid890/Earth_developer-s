@@ -1,0 +1,104 @@
+.about-page-wrapper {
+  /* Background image setting with overlay */
+  background: linear-gradient(rgba(12, 12, 12, 0.9), rgba(12, 12, 12, 0.9)), 
+              url('../assets/service-web.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+}
+
+.about-intro-section {
+  /* Yahan padding-top ko 150px rakha hai taake Hero se gap milay */
+  padding: 150px 15% 100px 15%; 
+  text-align: center;
+}
+
+/* Headings Group Styling */
+.about-header-group {
+  margin-bottom: 60px;
+}
+
+.section-tag {
+  color: #D4AF37;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.main-heading span {
+  color: #D4AF37;
+}
+
+.sub-heading {
+  color: #888;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Text Content Styling */
+.story-para {
+  font-size: 1.15rem;
+  color: #ccc;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gold-text {
+  color: #D4AF37;
+  font-weight: bold;
+}
+
+/* CTA Box Styling */
+.about-cta-box {
+  margin-top: 80px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.about-logo-small {
+  width: 180px;
+  margin-bottom: 25px;
+  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.3));
+}
+
+.btn-explore-gold {
+  padding: 15px 40px;
+  background: #D4AF37;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.btn-explore-gold:hover {
+  background: white;
+  transform: translateY(-5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-intro-section { padding: 100px 5%; }
+  .main-heading { font-size: 2rem; }
+}

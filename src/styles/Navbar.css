@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 8%;
+  background-color: #121212;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.logo-main {
+  height: 55px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 2.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+/* Jab user kisi bhi link par mouse le jaye to wo Gold ho jaye */
+.nav-links a:hover {
+  color: #D4AF37;
+}
+
+/* Hamburger Styles */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #D4AF37;
+  margin: 5px;
+}
+
+@media (max-width: 968px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background-color: #121212;
+    width: 100%;
+    height: 90vh;
+    transition: 0.5s;
+    padding-top: 50px;
+  }
+  .nav-links.open { left: 0; }
+  .nav-links li { margin: 1.5rem 0; }
+}
