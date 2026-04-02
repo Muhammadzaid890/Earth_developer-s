@@ -102,32 +102,3 @@
   .about-intro-section { padding: 100px 5%; }
   .main-heading { font-size: 2rem; }
 }
-
-@media (max-width: 768px) {
-  .about-intro-section {
-    padding: 60px 15px !important; /* Side padding kam karein */
-    text-align: center !important;
-  }
-
-  .about-header-group {
-    margin-bottom: 30px !important;
-  }
-
-  .main-heading {
-    font-size: 1.8rem !important; /* Heading choti karein */
-    line-height: 1.2 !important;
-  }
-
-  .story-para {
-    font-size: 0.95rem !important;
-    padding: 0 5px !important;
-    text-align: left !important; /* Mobile par left-align parhna asan hai */
-    line-height: 1.6 !important;
-  }
-
-  .about-cta-box {
-    width: 100% !important;
-    padding: 30px 15px !important;
-    margin-top: 40px !important;
-  }
-}
