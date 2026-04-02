@@ -13,7 +13,7 @@ const Contact = () => {
   // WhatsApp par message bhejne ka function
   const handleWhatsApp = (e) => {
     e.preventDefault();
-    const phoneNumber = "923001234567"; // 👈 Yahan apna asli WhatsApp number likhein (Country code ke saath)
+    const phoneNumber = "03132099816"; // 👈 Yahan apna asli WhatsApp number likhein (Country code ke saath)
     const text = `Assalam o Alaikum Earth Developers! 
     My Name: ${formData.name}
     Service: ${formData.service}
@@ -34,7 +34,7 @@ const Contact = () => {
             
             <div className="social-links-premium">
               <p>Connect with us on:</p>
-              <a href="https://instagram.com/your_id" target="_blank" className="insta-link">Instagram DM</a>
+              <a href="https://instagram.com/eart_h.dev" target="_blank" className="insta-link">Instagram DM</a>
             </div>
           </div>
 

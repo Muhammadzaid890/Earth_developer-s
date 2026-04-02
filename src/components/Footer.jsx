@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="footer-info-column">
           <h4 className="footer-label">Official Hub</h4>
           <p>Email: info@earthdevelopers.com</p>
-          <p className="footer-gold-tag">ESTABLISHED 2021</p>
+          <p className="footer-gold-tag">ESTABLISHED 2025</p>
         </div>
 
       </div>
