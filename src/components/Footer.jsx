@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Footer.css'; // Is file ko lazmi check karein
+import '../styles/Footer.css'; 
 import logoImg from '../assets/logo.png';
 
 const Footer = () => {
@@ -16,7 +16,6 @@ const Footer = () => {
           </p>
           
           <div className="social-icon-wrapper">
-            {/* Real Links Added Here */}
             <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="footer-icon-box">
               <i className="fab fa-instagram"></i>
             </a>
@@ -43,10 +42,17 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 3: Contact */}
+        {/* Column 3: Contact with Animated Email Button */}
         <div className="footer-info-column">
           <h4 className="footer-label">Official Hub</h4>
-          <p>Email: info@earthdevelopers.com</p>
+          
+          <div className="email-button-wrapper">
+            <a href="mailto:info@earthdevelopers.com" className="footer-email-btn">
+              <i className="fas fa-envelope"></i>
+              <span>Send an Email</span>
+            </a>
+          </div>
+
           <p className="footer-gold-tag">ESTABLISHED 2025</p>
         </div>
 

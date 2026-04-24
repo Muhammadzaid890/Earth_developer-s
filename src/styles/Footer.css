@@ -1,4 +1,4 @@
-/* --- Resetting and Container --- */
+/* --- Existing Styles (Keep them) --- */
 .premium-footer-final {
   background-color: #050505 !important;
   padding: 80px 10% 40px 10% !important;
@@ -15,7 +15,6 @@
   align-items: start !important;
 }
 
-/* --- Logo & Text --- */
 .footer-main-logo {
   width: 180px !important;
   margin-bottom: 20px !important;
@@ -29,7 +28,6 @@
   margin: 0 auto !important;
 }
 
-/* --- THE ANIMATIONS (Fixed) --- */
 .social-icon-wrapper {
   display: flex !important;
   justify-content: center !important;
@@ -48,25 +46,54 @@
   color: #D4AF37 !important;
   text-decoration: none !important;
   font-size: 1.2rem !important;
-  transition: all 0.4s ease !important; /* Transition for animation */
+  transition: all 0.4s ease !important;
   animation: footerFloat 3s ease-in-out infinite !important;
 }
 
-/* Hover Effect */
-.footer-icon-box:hover {
-  background-color: #D4AF37 !important;
-  color: #000 !important;
-  transform: translateY(-10px) scale(1.1) !important;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5) !important;
-}
-
-/* Floating Keyframes */
 @keyframes footerFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
 
-/* --- Fixing Dots & Links --- */
+/* --- NEW: Animated Email Button Styling --- */
+.email-button-wrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-email-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: 1px solid #D4AF37;
+  color: #D4AF37;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+  border-radius: 2px;
+  animation: emailGlowPulse 2s infinite;
+}
+
+.footer-email-btn:hover {
+  background: #D4AF37;
+  color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+}
+
+@keyframes emailGlowPulse {
+  0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(212, 175, 55, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+/* --- List & Label Styling --- */
 .footer-label {
   color: #D4AF37 !important;
   text-transform: uppercase !important;
@@ -75,13 +102,9 @@
 }
 
 .footer-ul {
-  list-style: none !important; /* No Dots */
+  list-style: none !important;
   padding: 0 !important;
   margin: 0 !important;
-}
-
-.footer-ul li {
-  margin-bottom: 12px !important;
 }
 
 .footer-ul li a {
@@ -90,19 +113,26 @@
   transition: 0.3s !important;
 }
 
-.footer-ul li a:hover {
-  color: #D4AF37 !important;
-}
+.footer-ul li a:hover { color: #D4AF37 !important; }
 
 .footer-gold-tag {
   color: #D4AF37 !important;
   font-weight: bold !important;
   letter-spacing: 3px !important;
-  margin-top: 20px !important;
+  margin-top: 15px !important;
 }
 
 .footer-copyright-bar {
   border-top: 1px solid #222 !important;
   padding-top: 30px !important;
   opacity: 0.6 !important;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .footer-info-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
