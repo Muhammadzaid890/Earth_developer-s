@@ -47,7 +47,7 @@ const Footer = () => {
           <h4 className="footer-label">Official Hub</h4>
           
           <div className="email-button-wrapper">
-            <a href="mailto:info@earthdevelopers.com" className="footer-email-btn">
+            <a href="mailto:earth.dev.10@gmail.com" className="footer-email-btn">
               <i className="fas fa-envelope"></i>
               <span>Send an Email</span>
             </a>
